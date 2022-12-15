@@ -22,12 +22,16 @@ public class SupportClass {
     }
 
     public SupportClass clickOnSoftAssertionLink() {
-        $(".markdown-body").$(new ByText("Soft assertions")).click();
+        $(".wiki-rightbar ul").$(new ByText("SoftAssertions")).click();
         return this;
     }
 
     public SupportClass checkJunit5Example() {
         $$(".markdown-body h4").get(2).shouldHave(text("3. Using JUnit5 extend test class:"));
+        return this;
+    }
+    public SupportClass clickOn2MorePage (){
+        $(".wiki-rightbar ul").$(new ByText("Show 2 more pages…")).click();
         return this;
     }
 }

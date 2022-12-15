@@ -8,6 +8,7 @@ public class GitHubTests extends TestBase {
         supportClass.openLink()
                 .clickOnWikiButton()
                 .searchSoftAssertionPage()
+                .clickOn2MorePage()
                 .clickOnSoftAssertionLink()
                 .checkJunit5Example();
     }
